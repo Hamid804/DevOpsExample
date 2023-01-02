@@ -11,7 +11,7 @@ public class MyController {
 	
 	@GetMapping("/")
 	public String welcome() {
-		return "Welcome to rest api...it's working";
+		return "Welcome to rest api...it's working...updated";
 	}
 	
 	@GetMapping("/about")
