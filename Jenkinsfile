@@ -25,7 +25,7 @@ pipeline {
         
         stage('Build Docker Image') {
             steps {
-                bat 'docker build -t devopsJenkinsImage .'
+                bat 'docker build -t devopsimage .'
             }
         }
 
