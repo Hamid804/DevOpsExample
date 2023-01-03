@@ -11,7 +11,7 @@ public class MyController {
 	
 	@GetMapping("/")
 	public String welcome() {
-		return "Welcome to rest api...it's working...Initial...dangling update";
+		return "Welcome to rest api...it's working...SonarQube";
 	}
 	
 	@GetMapping("/about")
