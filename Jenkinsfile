@@ -26,6 +26,8 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 bat 'docker-compose up -d --build'
+                
+                bat 'docker system prune -f'
             }
         }
 
