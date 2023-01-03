@@ -1,0 +1,11 @@
+version: '3'
+services:
+  appservice:
+    build: .
+    ports:
+      - 7072:7072
+    networks:
+      - bootapp
+
+networks:
+  bootapp:

@@ -25,13 +25,7 @@ pipeline {
         
         stage('Build Docker Image') {
             steps {
-                bat 'docker build -t my-devopsimage .'
-            }
-        }
-        
-        stage('Run Docker Cont') {
-            steps {
-                bat 'docker run --name devopsContainer3 -it -p 7072:7072 -d my-devopsimage'
+                bat 'docker-compose up -d'
             }
         }
 
