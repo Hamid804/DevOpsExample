@@ -23,6 +23,14 @@ pipeline {
             }
         }
         
+        stage('SonarQube Analysis') {
+            steps {
+            	withSonarQubeEnv('My SonarQube Server') {
+            		bat 'mvn sonar:sonar'
+                }
+            }
+        }
+        
         stage('Build Docker Image') {
             steps {
                 bat 'docker-compose up -d --build'
